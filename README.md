@@ -1,14 +1,19 @@
-# Twiddle
+<h1 align="center">Twiddle</h1>
 
-> A headless-friendly immediate-mode UI toolkit for Ruby graphics.
+<p align="center">A headless-friendly immediate-mode UI toolkit for Ruby graphics.</p>
 
-[![Gem version](https://badge.fury.io/rb/twiddle.svg)](https://rubygems.org/gems/twiddle) [![Downloads](https://img.shields.io/gem/dt/twiddle?label=downloads)](https://rubygems.org/gems/twiddle) [![Ruby](https://img.shields.io/badge/ruby-%3E%3D3.1-CC342D?logo=ruby&logoColor=white)](https://www.ruby-lang.org/) [![CI](https://github.com/rbgfx/twiddle/actions/workflows/main.yml/badge.svg)](https://github.com/rbgfx/twiddle/actions/workflows/main.yml) [![License](https://img.shields.io/badge/license-MIT-750014.svg)](LICENSE.txt)
+<p align="center">
+  <a href="https://rubygems.org/gems/twiddle"><img src="https://badge.fury.io/rb/twiddle.svg" alt="Gem Version"></a>
+  <a href="https://rubygems.org/gems/twiddle"><img src="https://img.shields.io/gem/dt/twiddle?label=downloads" alt="Downloads"></a>
+  <a href="https://www.ruby-lang.org/"><img src="https://img.shields.io/badge/ruby-%3E%3D3.1-CC342D?logo=ruby&amp;logoColor=white" alt="Ruby Version"></a>
+  <a href="LICENSE.txt"><img src="https://img.shields.io/badge/license-MIT-750014.svg" alt="License"></a>
+</p>
 
-**[Features](#features) · [Installation](#installation) · [Requirements](#requirements) · [Quick start](#quick-start) · [RBGL integration](#rbgl-integration) · [Development](#development) · [License](#license) · [Website](https://rbgfx.github.io/twiddle/)**
+[Features](#features) · [Installation](#installation) · [Quick Start](#quick-start) · [RBGL Integration](#rbgl-integration)
 
----
+***
 
-Twiddle renders compact controls into Tessel images and accepts plain event hashes, so the same UI runs in tests, headless renderers, and RBGL windows.
+Twiddle renders compact controls into Tessel images and accepts plain event hashes, so the same UI can run in tests, a headless renderer, or an RBGL window.
 
 ## Features
 
@@ -39,12 +44,12 @@ Or install the released gem:
 gem install twiddle
 ~~~
 
-## Requirements
+### Requirements
 
 - Ruby 3.1 or newer.
 - Tessel and Glyphic are installed as runtime dependencies; RBGL integration is optional.
 
-## Quick start
+## Quick Start
 
 ~~~ruby
 require "tessel"
@@ -86,6 +91,10 @@ The adapter polls backend events and presents the rendered Tessel image with
 bundle install
 bundle exec rake verify
 ~~~
+
+## Contributing
+
+Bug reports and pull requests are welcome at [rbgfx/twiddle](https://github.com/rbgfx/twiddle).
 
 ## License
 
