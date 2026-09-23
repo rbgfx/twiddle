@@ -1,18 +1,14 @@
 # Twiddle
 
-[![Gem version](https://badge.fury.io/rb/twiddle.svg)](https://rubygems.org/gems/twiddle)
-[![Downloads](https://img.shields.io/gem/dt/twiddle?label=downloads)](https://rubygems.org/gems/twiddle)
-[![CI](https://github.com/rbgfx/twiddle/actions/workflows/main.yml/badge.svg)](https://github.com/rbgfx/twiddle/actions/workflows/main.yml)
-[![Ruby](https://img.shields.io/badge/ruby-%3E%3D3.1-CC342D?logo=ruby&logoColor=white)](https://www.ruby-lang.org/)
-[![License](https://img.shields.io/badge/license-MIT-750014.svg)](LICENSE.txt)
-
 > A headless-friendly immediate-mode UI toolkit for Ruby graphics.
 
-Twiddle renders compact controls into Tessel images and accepts plain event
-hashes, so the same UI can run in tests, a headless renderer, or an rbgl
-window.
+[![Gem version](https://badge.fury.io/rb/twiddle.svg)](https://rubygems.org/gems/twiddle) [![Downloads](https://img.shields.io/gem/dt/twiddle?label=downloads)](https://rubygems.org/gems/twiddle) [![Ruby](https://img.shields.io/badge/ruby-%3E%3D3.1-CC342D?logo=ruby&logoColor=white)](https://www.ruby-lang.org/) [![CI](https://github.com/rbgfx/twiddle/actions/workflows/main.yml/badge.svg)](https://github.com/rbgfx/twiddle/actions/workflows/main.yml) [![License](https://img.shields.io/badge/license-MIT-750014.svg)](LICENSE.txt)
 
-**[Features](#features) · [Installation](#installation) · [Quick start](#quick-start) · [RBGL integration](#rbgl-integration) · [Development](#development)**
+**[Features](#features) · [Installation](#installation) · [Requirements](#requirements) · [Quick start](#quick-start) · [RBGL integration](#rbgl-integration) · [Development](#development) · [License](#license) · [Website](https://rbgfx.github.io/twiddle/)**
+
+---
+
+Twiddle renders compact controls into Tessel images and accepts plain event hashes, so the same UI runs in tests, headless renderers, and RBGL windows.
 
 ## Features
 
@@ -42,6 +38,11 @@ Or install the released gem:
 ~~~sh
 gem install twiddle
 ~~~
+
+## Requirements
+
+- Ruby 3.1 or newer.
+- Tessel and Glyphic are installed as runtime dependencies; RBGL integration is optional.
 
 ## Quick start
 
