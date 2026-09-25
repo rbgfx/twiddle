@@ -4,8 +4,8 @@
 
 ## [0.1.1] - 2026-09-25
 
-- Correct the gem author and license attribution.
-- Bound the Tessel and Glyphic dependencies to compatible major versions.
+- Correct the author and license information in the published gem.
+- Prevent installation with unsupported major versions of Tessel or Glyphic.
 
 ## [0.1.0] - 2026-09-23
 
