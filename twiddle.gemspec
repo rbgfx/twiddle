@@ -5,7 +5,7 @@ require_relative "lib/twiddle/version"
 Gem::Specification.new do |spec|
   spec.name = "twiddle"
   spec.version = Twiddle::VERSION
-  spec.authors = ["ydah"]
+  spec.authors = ["Yudai Takada"]
   spec.email = ["t.yudai92@gmail.com"]
 
   spec.summary = "Immediate mode UI for Ruby graphics"
