@@ -32,8 +32,10 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler: default
-          bundler-cache: true
+          bundler-cache: false
           working-directory: main
+      - name: Install dependencies
+        run: bundle install --full-index
       - name: Run verification
         run: bundle exec rake verify
 
