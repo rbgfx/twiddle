@@ -25,7 +25,7 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler: default
-      - run: bundle install
+      - run: bundle install --full-index
       - name: Verify tag and version
         run: |
           version="$(ruby -e 'print Gem::Specification.load(Dir.glob("*.gemspec").fetch(0)).version')"
