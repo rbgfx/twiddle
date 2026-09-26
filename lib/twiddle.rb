@@ -124,7 +124,7 @@ module Twiddle
     def initialize(font: nil, scale: 1.0, debug: false, theme: {})
       @font = font || Glyphic.default
       @scale = Float(scale)
-      raise ArgumentError, "scale must be positive" unless @scale.positive?
+      raise ArgumentError, "scale must be positive and finite" unless @scale.positive? && @scale.finite?
       @debug = debug
       @theme = DEFAULT_THEME.transform_values(&:dup)
       set_theme(theme)

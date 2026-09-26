@@ -307,6 +307,10 @@ RSpec.describe Twiddle do
     expect(clicked).to eq([false, true])
   end
 
+  it "rejects an infinite UI scale" do
+    expect { Twiddle::Context.new(scale: Float::INFINITY) }.to raise_error(ArgumentError, /finite/)
+  end
+
   it "edits bounded numeric values through keyboard input" do
     ui = Twiddle::Context.new
     value = 1.0
