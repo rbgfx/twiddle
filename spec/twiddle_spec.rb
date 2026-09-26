@@ -257,6 +257,8 @@ RSpec.describe Twiddle do
     draw_tooltip.call(0.25)
     expect(ui.draw_list.commands.any? { |command| command.first == :text && command[1] == "details" }).to be(true)
     expect { ui.frame(delta_time: -1) {} }.to raise_error(ArgumentError)
+    expect { ui.frame(delta_time: Float::NAN) {} }.to raise_error(ArgumentError)
+    expect { ui.frame(delta_time: Float::INFINITY) {} }.to raise_error(ArgumentError)
     expect { ui.frame { |g| g.tooltip("details", delay: -1) } }.to raise_error(ArgumentError)
   end
 

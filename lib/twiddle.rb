@@ -160,7 +160,7 @@ module Twiddle
 
     def frame(events: [], delta_time: 1.0 / 60.0)
       delta_time = Float(delta_time)
-      raise ArgumentError, "delta_time must not be negative" if delta_time.negative?
+      raise ArgumentError, "delta_time must be finite and non-negative" unless delta_time.finite? && !delta_time.negative?
       @time += delta_time
       @input.update(events, scale: @scale)
       @active = nil if events.any? { |event| event[:type].to_sym == :blur }
